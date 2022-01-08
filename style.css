@@ -1,0 +1,151 @@
+body {
+  /* Ova za da go pokaze vertical scroll pri vcituvanje na stranata */
+  /* za da se izbegne poremetuvanje na stranata koga ke se zgolemi tabelata */
+  overflow-y:scroll;
+}
+
+
+#race {
+  text-align: center;
+  background-color: #242021;
+}
+
+#overlay {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 2;
+	display:none;
+	justify-content: center;
+	align-items: center;
+}
+.flag{
+  display:none;
+  z-index:3;
+}
+
+.counter {
+	font-size: 20rem;
+  color:white;
+  z-index:3 ;
+}
+
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3, 
+p {
+  color: #a2a2a2;
+}
+
+h3, .h3 {
+  font-size: 25px;
+}
+
+h2, .h2 {
+  font-size: 35px;
+}
+
+h1, .h1 {
+  font-size: 50px;
+}
+
+/*use these below*/
+.car {
+  width: 200px;
+  position: absolute;
+  left: 0;
+}
+.car img {
+  z-index:1;
+}
+#car1 {
+  top: 275px;
+}
+#car2 {
+  top: 125px;
+}
+.btn {
+  background-color: transparent;
+  border: 1.5px solid white;
+  color: white;
+  width: 20%;
+  margin: 0 10px;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.btn:hover {
+  color: white;
+}
+.car1 {
+  /*color*/
+  color: #ffebf7;
+}
+
+.car2 {
+  /*color*/
+  color: #ba0000;
+}
+
+.car1,
+.car2 {
+  font-weight: 700;
+}
+
+.car-h4  {
+  display: inline-block;
+}
+
+.racetrack {
+  margin-top: 30px;
+  background: url("img/raceTrack.jpg") center left repeat-x;
+  height: 300px;
+  background-size: contain;
+}
+
+.resultsTbl tr {
+	border: 2px solid white;
+	color:grey;
+}
+.resultsTbl td, #prevTimeResults td {
+	padding: 10px 10px;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+.resultsTbl span, #prevTimeResults  span {
+	font-size: 1.8rem;
+}
+table {
+	border:2px solid white;
+	color:grey;
+	font-weight: 700;
+}
+#prevTimeResults h3{
+	margin-bottom: 60px;
+}
+
+@media only screen and (max-width: 768px) {
+  #car1, #car2 {
+    width: 150px;
+  }
+
+  #car1 {
+    top: 300px;
+  }
+  #car2 {
+    top: 150px;
+  }
+  .counter {
+    font-size: 15rem;
+  }
+  .btn {
+    min-width:66px;
+  }
+}

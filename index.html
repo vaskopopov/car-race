@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Car racing game</title>
+	<meta name="keywords" content="html,css,lekcii">
+	<meta name="description" content="ova e strana za ucenje">
+	<meta name="author" content="Kristijan Bobevski">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<!-- Latest compiled and minified BOOTSTRAP CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- Local CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- Font-awesome 4.7 cdn -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="race">
+	<!-- write your code here -->
+
+
+	<div>
+		<p><span class="h1">Car racing game</span> by <span class="h3">Vasko Popov</span></p>
+	</div>
+	<input type="button" class="btn" value="Race!" id='go'>
+	<input type="button" class="btn" value="Start over" id='reset'>
+
+	<div class="racetrack">
+		<div id='overlay'>
+			<div class="flag"><img src="img/finish.gif"></div>
+			<div class="counter"></div>
+		</div>
+
+		<img src="img/car1.gif" alt="red car" id='car1' class='car'>;
+		<img src="img/car2.gif" alt="pink car" id='car2' class='car'>;
+
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6">
+				<h2 class="text-center">Results</h2>
+				<div class="row text-center ">
+					<div class="col-md-6 col-xs-6">
+							<h4 class="car1 car-h4">Car 1</h4>
+							<img src="img/car1.gif" height="50px">
+						<table class='resultsTbl' id='car1table'>
+							<tbody></tbody>
+						</table>
+					</div>
+					<div class="col-md-6 col-xs-6">
+						<h4 class="car2 car-h4">Car 2</h4>
+						<img src="img/car2.gif" height="50px">
+						<table class='resultsTbl' id='car2table'>
+							<tbody></tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6" id="prevTimeResults">
+
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+	<!-- Custom JS script -->
+	<script src="app.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
